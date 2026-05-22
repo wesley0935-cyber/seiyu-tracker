@@ -1,25 +1,39 @@
 export const TODAY = new Date('2026-05-22T00:00:00');
 
 export const VAS = [
-  { id: 'kamiya',    ja: '神谷浩史', romaji: 'Kamiya',    color: '#2563eb', bday: '01-28', age: 50, debut: 1994 },
-  { id: 'hanazawa',  ja: '花澤香菜', romaji: 'Hanazawa',  color: '#ff5e8a', bday: '02-25', age: 36, debut: 2003 },
-  { id: 'kaji',      ja: '梶裕貴',   romaji: 'Kaji',      color: '#0f766e', bday: '09-03', age: 40, debut: 2004 },
-  { id: 'kugimiya',  ja: '釘宮理恵', romaji: 'Kugimiya',  color: '#f97316', bday: '05-30', age: 47, debut: 1998 },
-  { id: 'kobayashi', ja: '小林愛香', romaji: 'Aika',      color: '#a855f7', bday: '12-12', age: 29, debut: 2014 },
-  { id: 'yamashita', ja: '山下大輝', romaji: 'Yamashita', color: '#e11d48', bday: '09-07', age: 31, debut: 2014 },
-  { id: 'okamoto',   ja: '岡本信彦', romaji: 'Okamoto',   color: '#0284c7', bday: '10-24', age: 39, debut: 2006 },
-  { id: 'seki',      ja: '関智一',   romaji: 'Seki',      color: '#65a30d', bday: '09-08', age: 53, debut: 1988 },
-  { id: 'iwata',     ja: '岩田陽葵', romaji: 'Iwata',     color: '#db2777', bday: '05-25', age: 24, debut: 2019 },
-  { id: 'toki',      ja: '土岐隼一', romaji: 'Toki',      color: '#7c3aed', bday: '07-15', age: 31, debut: 2017 },
+  // 男聲優 15 位
+  { id: 'kamiya',     ja: '神谷浩史', romaji: 'Kamiya',     color: '#2563eb', bday: '01-28', age: 50, debut: 1994 },
+  { id: 'miyano',     ja: '宮野真守', romaji: 'Miyano',     color: '#7c3aed', bday: '06-08', age: 38, debut: 2003 },
+  { id: 'nakamura',   ja: '中村悠一', romaji: 'Nakamura',   color: '#0f766e', bday: '02-20', age: 42, debut: 2004 },
+  { id: 'sugita',     ja: '杉田智和', romaji: 'Sugita',     color: '#64748b', bday: '10-16', age: 41, debut: 2000 },
+  { id: 'kaji',       ja: '梶裕貴',   romaji: 'Kaji',       color: '#0284c7', bday: '09-03', age: 40, debut: 2004 },
+  { id: 'matsuoka',   ja: '松岡禎丞', romaji: 'Matsuoka',   color: '#e11d48', bday: '09-17', age: 35, debut: 2012 },
+  { id: 'hanae',      ja: '花江夏樹', romaji: 'Hanae',      color: '#f97316', bday: '02-26', age: 31, debut: 2011 },
+  { id: 'sakurai',    ja: '櫻井孝宏', romaji: 'Sakurai',    color: '#475569', bday: '06-13', age: 49, debut: 1994 },
+  { id: 'ishida',     ja: '石田彰',   romaji: 'Ishida',     color: '#94a3b8', bday: '11-02', age: 58, debut: 1989 },
+  { id: 'fukuyama',   ja: '福山潤',   romaji: 'Fukuyama',   color: '#9333ea', bday: '11-26', age: 44, debut: 1998 },
+  { id: 'ono_d',      ja: '小野大輔', romaji: 'OnoD',       color: '#1d4ed8', bday: '05-04', age: 43, debut: 2004 },
+  { id: 'suwabe',     ja: '諏訪部順一',romaji: 'Suwabe',    color: '#b45309', bday: '03-16', age: 51, debut: 1999 },
+  { id: 'tsuda',      ja: '津田健次郎',romaji: 'Tsuda',     color: '#334155', bday: '08-11', age: 52, debut: 1995 },
+  { id: 'shimono',    ja: '下野紘',   romaji: 'Shimono',    color: '#65a30d', bday: '12-21', age: 43, debut: 2002 },
+  { id: 'saito',      ja: '齊藤壯馬', romaji: 'Saito',      color: '#06b6d4', bday: '09-14', age: 32, debut: 2014 },
+  // 女聲優 15 位
+  { id: 'hanazawa',   ja: '花澤香菜', romaji: 'Hanazawa',   color: '#ff5e8a', bday: '02-25', age: 36, debut: 2003 },
+  { id: 'hayami',     ja: '早見沙織', romaji: 'Hayami',     color: '#818cf8', bday: '05-29', age: 32, debut: 2007 },
+  { id: 'takahashi',  ja: '高橋李依', romaji: 'Takahashi',  color: '#f43f5e', bday: '02-27', age: 29, debut: 2013 },
+  { id: 'minase',     ja: '水瀨祈',   romaji: 'Minase',     color: '#a78bfa', bday: '12-23', age: 27, debut: 2013 },
+  { id: 'tanezaki',   ja: '種崎敦美', romaji: 'Tanezaki',   color: '#34d399', bday: '11-08', age: 32, debut: 2012 },
+  { id: 'sakura',     ja: '佐倉綾音', romaji: 'Sakura',     color: '#fb7185', bday: '06-26', age: 32, debut: 2010 },
+  { id: 'yuuki',      ja: '悠木碧',   romaji: 'Yuuki',      color: '#c084fc', bday: '03-27', age: 30, debut: 2003 },
+  { id: 'kito',       ja: '鬼頭明里', romaji: 'Kito',       color: '#f472b6', bday: '10-16', age: 26, debut: 2017 },
+  { id: 'hayashibara',ja: '林原惠',   romaji: 'Hayashibara',color: '#dc2626', bday: '03-30', age: 57, debut: 1988 },
+  { id: 'kugimiya',   ja: '釘宮理恵', romaji: 'Kugimiya',   color: '#f97316', bday: '05-30', age: 47, debut: 1998 },
+  { id: 'sawashiro',  ja: '澤城美雪', romaji: 'Sawashiro',  color: '#7c3aed', bday: '03-20', age: 39, debut: 2003 },
+  { id: 'kayano',     ja: '茅野愛衣', romaji: 'Kayano',     color: '#0ea5e9', bday: '01-13', age: 37, debut: 2010 },
+  { id: 'uchida',     ja: '內田真禮', romaji: 'Uchida',     color: '#e879f9', bday: '12-23', age: 31, debut: 2011 },
+  { id: 'amamiya',    ja: '雨宮天',   romaji: 'Amamiya',    color: '#38bdf8', bday: '09-27', age: 30, debut: 2013 },
+  { id: 'ueda',       ja: '上田麗奈', romaji: 'Ueda',       color: '#a3e635', bday: '06-27', age: 30, debut: 2013 },
 ];
-
-export const ROOKIES = [
-  { id: 'tsukishiro', ja: '月城ひかり', romaji: 'Tsukishiro', color: '#10b981', age: 19, debut: 2025, role: '魔法少女・主役' },
-  { id: 'morikawa',   ja: '森川蓮',     romaji: 'Morikawa',   color: '#06b6d4', age: 21, debut: 2025, role: 'スポーツ系・準主役' },
-  { id: 'umino',      ja: '海野楓',     romaji: 'Umino',      color: '#f43f5e', age: 18, debut: 2026, role: 'デビュー作主演' },
-  { id: 'kiritani',   ja: '桐ヶ谷涼',   romaji: 'Kiritani',   color: '#f59e0b', age: 22, debut: 2025, role: 'ヒロイン枠' },
-];
-
 export const TYPES = {
   all:     { tc: '全部',   ja: '全て',     en: 'All',          ko: '전체',   color: '#111' },
   concert: { tc: '演唱會', ja: 'ライブ',   en: 'Concert',      ko: '콘서트', color: '#ff3366' },
