@@ -1,0 +1,111 @@
+*, *::before, *::after { box-sizing: border-box; }
+
+html, body {
+  margin: 0;
+  padding: 0;
+  min-height: 100%;
+  background: #0e0e0e;
+}
+
+body {
+  font-family: 'Noto Sans JP', 'Inter', -apple-system, system-ui, sans-serif;
+  color: #fff;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+button {
+  font-family: inherit;
+  border: none;
+  background: none;
+  cursor: pointer;
+}
+
+input {
+  font-family: inherit;
+}
+
+#root {
+  min-height: 100vh;
+}
+
+/* ── Poster animations ── */
+@keyframes posb-marquee {
+  0%   { transform: translateX(0); }
+  100% { transform: translateX(-50%); }
+}
+@keyframes posb-spin {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(360deg); }
+}
+@keyframes posb-spin-rev {
+  0%   { transform: rotate(0deg); }
+  100% { transform: rotate(-360deg); }
+}
+@keyframes posb-pulse {
+  0%, 100% { transform: scale(1); }
+  50%       { transform: scale(1.08); }
+}
+@keyframes posb-shake {
+  0%, 100% { transform: translate(0,0) rotate(-3deg); }
+  25%       { transform: translate(-1px,1px) rotate(-3.3deg); }
+  75%       { transform: translate(1px,-1px) rotate(-2.7deg); }
+}
+@keyframes posb-pop {
+  0%   { transform: scale(.7) rotate(-8deg); opacity: 0; }
+  60%  { transform: scale(1.05) rotate(2deg); opacity: 1; }
+  100% { transform: scale(1) rotate(0); opacity: 1; }
+}
+@keyframes posb-slide-up {
+  0%   { transform: translateY(20px); opacity: 0; }
+  100% { transform: translateY(0); opacity: 1; }
+}
+@keyframes posb-tape-wave {
+  0%, 100% { transform: rotate(-6deg) translateY(0); }
+  50%       { transform: rotate(-6.5deg) translateY(-1px); }
+}
+@keyframes posb-count-flicker {
+  0%, 100% { text-shadow: 6px 6px 0 var(--posb-ink, #0e0e0e); }
+  50%       { text-shadow: 6px 6px 0 var(--posb-ink, #0e0e0e), 0 0 32px currentColor; }
+}
+
+/* ── Poster CSS classes ── */
+.posb-tile-wrap {
+  transition: transform .35s cubic-bezier(.2,.8,.3,1);
+  will-change: transform;
+}
+.posb-tile-wrap:hover {
+  transform: rotate(0deg) scale(1.04) !important;
+  z-index: 5;
+}
+.posb-tile-wrap:hover .posb-tile-body {
+  box-shadow: 14px 14px 0 var(--posb-shadow, #0e0e0e) !important;
+}
+.posb-tile-wrap:hover .posb-tile-cd {
+  animation: posb-pulse .8s ease-in-out infinite;
+}
+
+.posb-cta { transition: transform .15s; }
+.posb-cta:hover  { transform: scale(1.03) rotate(-1deg); }
+.posb-cta:active { transform: scale(.98); }
+
+.posb-star      { display: inline-block; animation: posb-spin 6s linear infinite; }
+.posb-star-slow { display: inline-block; animation: posb-spin 14s linear infinite; }
+.posb-star-rev  { display: inline-block; animation: posb-spin-rev 9s linear infinite; }
+
+.posb-sticker { transition: transform .25s; cursor: pointer; }
+.posb-sticker:hover { transform: rotate(0deg) scale(1.08) !important; z-index: 3; }
+
+.posb-bday  { animation: posb-shake 1.6s ease-in-out infinite; }
+.posb-pin   { animation: posb-slide-up .5s both; }
+.posb-pop   { animation: posb-pop .4s both; }
+.posb-bigcount { animation: posb-count-flicker 2.4s ease-in-out infinite; }
+
+.posb-lang-btn { transition: transform .15s; }
+.posb-lang-btn:hover { transform: translateY(-1px); }
+
+.posb-pal-btn { transition: all .2s; cursor: pointer; }
+.posb-pal-btn:hover { transform: scale(1.15); }
+
+.posb-rookie-card { transition: transform .3s; }
+.posb-rookie-card:hover { transform: translateY(-6px) rotate(-1deg); }
