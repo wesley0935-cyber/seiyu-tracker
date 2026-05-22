@@ -31,11 +31,20 @@ export const TYPES = {
 
 // Supabase event_type (中文) → design type key (英文)
 export const TYPE_MAP = {
+  // 日文（Supabase 實際存的值）
+  'ライブ':   'concert',
+  'イベント': 'meet',
+  '握手会':   'meet',
+  'ラジオ':   'radio',
+  '舞台':     'stage',
+  '舞台挨拶': 'stage',
+  'その他':   'other',
+  // 中文（舊資料相容）
   '演唱會': 'concert',
   '見面會': 'meet',
   '握手會': 'meet',
   '廣播':   'radio',
-  '舞台':   'stage',
+  '舞台劇': 'stage',
   '其他':   'other',
 };
 
