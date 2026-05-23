@@ -1,4 +1,4 @@
-export const TODAY = new Date('2026-05-22T00:00:00');
+export const TODAY = new Date();
 
 export const VAS = [
   // 男聲優 15 位
