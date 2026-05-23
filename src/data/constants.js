@@ -36,11 +36,16 @@ export const VAS = [
 ];
 
 export const ROOKIES = [
-  { id: 'tsukishiro', ja: '月城ひかり', romaji: 'Tsukishiro', color: '#10b981', age: 19, debut: 2025, role: '魔法少女・主役' },
-  { id: 'morikawa',   ja: '森川蓮',     romaji: 'Morikawa',   color: '#06b6d4', age: 21, debut: 2025, role: 'スポーツ系・準主役' },
-  { id: 'umino',      ja: '海野楓',     romaji: 'Umino',      color: '#f43f5e', age: 18, debut: 2026, role: 'デビュー作主演' },
-  { id: 'kiritani',   ja: '桐ヶ谷涼',   romaji: 'Kiritani',   color: '#f59e0b', age: 22, debut: 2025, role: 'ヒロイン枠' },
+  { id: 'kimura',     ja: '木村太飛',   romaji: 'Kimura',     color: '#e11d48', age: 23, debut: 2023, role: '陰陽廻天 Re:バース・業平猛' },
+  { id: 'nakayama',   ja: '中山祥徳',   romaji: 'Nakayama',   color: '#0284c7', age: 24, debut: 2023, role: '薫る花は凛と咲く・紬凛太郎' },
+  { id: 'takano',     ja: '高野大河',   romaji: 'Takano',     color: '#10b981', age: 22, debut: 2024, role: '声優アワード新人賞' },
+  { id: 'terazawa',   ja: '寺澤百花',   romaji: 'Terazawa',   color: '#f43f5e', age: 21, debut: 2024, role: '声優アワード新人賞' },
+  { id: 'hishikawa',  ja: '菱川花菜',   romaji: 'Hishikawa',  color: '#a855f7', age: 22, debut: 2024, role: '声優アワード新人賞' },
+  { id: 'fujidera',   ja: '藤寺美徳',   romaji: 'Fujidera',   color: '#f59e0b', age: 23, debut: 2023, role: '声優アワード新人賞' },
+  { id: 'mikawa',     ja: '三川華月',   romaji: 'Mikawa',     color: '#06b6d4', age: 20, debut: 2024, role: '声優アワード新人賞' },
+  { id: 'murakami',   ja: '村上まなつ', romaji: 'Murakami',   color: '#ec4899', age: 21, debut: 2024, role: '声優アワード新人賞' },
 ];
+
 
 export const TYPES = {
   all:     { tc: '全部',   ja: '全て',     en: 'All',          ko: '전체',   color: '#111' },
