@@ -4,6 +4,7 @@ import { PALETTES, LANGS_POSTER, str, mapLang } from './data/constants';
 import { PaletteCtx } from './components/EventCard';
 import EventList from './components/EventList';
 import NotificationManager from './components/NotificationManager';
+import VisitorCounter from './components/VisitorCounter';
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -48,6 +49,9 @@ export default function App() {
           backgroundSize: '12px 12px',
           zIndex: 0,
         }} />
+
+        {/* ── VISITOR COUNTER ── */}
+        <VisitorCounter lang={lang} />
 
         {/* ── MARQUEE ── */}
         <div style={{
