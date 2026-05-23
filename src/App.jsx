@@ -5,6 +5,7 @@ import { PaletteCtx } from './components/EventCard';
 import EventList from './components/EventList';
 import NotificationManager from './components/NotificationManager';
 import VisitorCounter from './components/VisitorCounter';
+import Footer from './components/Footer';
 
 export default function App() {
   const { i18n } = useTranslation();
@@ -181,18 +182,7 @@ export default function App() {
         />
 
         {/* ── FOOTER ── */}
-        <div style={{
-          padding: '20px 32px',
-          background: pal.p1, color: pal.ink,
-          borderTop: `3px solid ${pal.ink}`,
-          fontFamily: '"Anton",sans-serif', fontSize: 24, letterSpacing: '.1em',
-          textAlign: 'center', position: 'relative', zIndex: 1,
-        }}>
-          © 2026 {str('brand', lang).toUpperCase()} · MADE FOR FANS ·{' '}
-          <span className="posb-star">★</span>
-          <span className="posb-star-rev">★</span>
-          <span className="posb-star-slow">★</span>
-        </div>
+        <Footer lang={lang} />
       </div>
     </PaletteCtx.Provider>
   );
